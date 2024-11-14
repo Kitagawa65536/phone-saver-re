@@ -1,4 +1,4 @@
-package link.standen.michael.phonesaver.util
+package link.standen.michael.phonesaver_re.util
 
 import android.content.Context
 import android.os.Build
@@ -6,7 +6,7 @@ import android.os.Environment
 import android.preference.PreferenceManager
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import link.standen.michael.phonesaver.R
+import link.standen.michael.phonesaver_re.R
 import java.io.File
 
 /**

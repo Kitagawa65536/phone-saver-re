@@ -1,13 +1,13 @@
-package link.standen.michael.phonesaver.activity
+package link.standen.michael.phonesaver_re.activity
 
 import android.os.Build
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
-import android.support.v7.preference.ListPreference
-import android.support.v7.preference.Preference
-import android.support.v7.preference.PreferenceFragmentCompat
 import android.view.MenuItem
-import link.standen.michael.phonesaver.R
+import androidx.appcompat.app.AppCompatActivity
+import androidx.preference.ListPreference
+import androidx.preference.Preference
+import androidx.preference.PreferenceFragmentCompat
+import link.standen.michael.phonesaver_re.R
 
 /**
  * A Preference Activity that presents a set of application settings. On
@@ -33,25 +33,25 @@ class SettingsActivity: AppCompatActivity() {
 			setPreferencesFromResource(R.xml.preferences, rootKey)
 
 			// Bind the summaries of file exists preferences to their value summary.
-			val fileExistsPref = findPreference("file_exists")
-			fileExistsPref.onPreferenceChangeListener = Preference.OnPreferenceChangeListener { preference, newValue ->
+			val fileExistsPref = findPreference<Preference>("file_exists")
+			fileExistsPref!!.onPreferenceChangeListener = Preference.OnPreferenceChangeListener { preference, newValue ->
 				updateListPreferenceSummary(R.array.pref_list_description_file_exists, preference, newValue.toString())
 			}
 			updateListPreferenceSummary(R.array.pref_list_description_file_exists, fileExistsPref)
 
 			// Bind the summaries of log to user preferences to their value summary.
-			val logToUserPref = findPreference("log_to_user")
-			logToUserPref.onPreferenceChangeListener = Preference.OnPreferenceChangeListener { preference, newValue ->
+			val logToUserPref = findPreference<Preference>("log_to_user")
+			logToUserPref!!.onPreferenceChangeListener = Preference.OnPreferenceChangeListener { preference, newValue ->
 				updateListPreferenceSummary(R.array.pref_list_description_log_to_user, preference, newValue.toString())
 			}
 			updateListPreferenceSummary(R.array.pref_list_description_log_to_user, logToUserPref)
 
 			// Block the location select feature by API level
 			if (Build.VERSION.SDK_INT < Build.VERSION_CODES.KITKAT) {
-				with (findPreference("location_select")){
-					isEnabled = false
-					setTitle(R.string.pref_title_location_select_unavailable)
-					setSummary(R.string.pref_description_location_select_unavailable)
+				with (findPreference<Preference>("location_select")){
+					this?.isEnabled = false
+					this?.setTitle(R.string.pref_title_location_select_unavailable)
+					this?.setSummary(R.string.pref_description_location_select_unavailable)
 				}
 			}
 		}

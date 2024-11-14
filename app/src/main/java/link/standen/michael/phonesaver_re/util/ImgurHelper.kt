@@ -1,7 +1,7 @@
-package link.standen.michael.phonesaver.util
+package link.standen.michael.phonesaver_re.util
 
 import android.content.Context
-import link.standen.michael.phonesaver.data.ConnectionPair
+import link.standen.michael.phonesaver_re.data.ConnectionPair
 
 import java.io.BufferedReader
 import java.io.InputStreamReader

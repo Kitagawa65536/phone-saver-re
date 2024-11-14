@@ -1,4 +1,4 @@
-package link.standen.michael.phonesaver.adapter
+package link.standen.michael.phonesaver_re.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,9 +7,9 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.TextView
 
-import link.standen.michael.phonesaver.R
-import link.standen.michael.phonesaver.util.LocationHelper
-import link.standen.michael.phonesaver.data.LocationWithData
+import link.standen.michael.phonesaver_re.R
+import link.standen.michael.phonesaver_re.util.LocationHelper
+import link.standen.michael.phonesaver_re.data.LocationWithData
 import java.io.File
 
 /**

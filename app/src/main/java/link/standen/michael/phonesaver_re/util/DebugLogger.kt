@@ -1,11 +1,11 @@
-package link.standen.michael.phonesaver.util
+package link.standen.michael.phonesaver_re.util
 
 import android.app.Activity
 import android.content.Context
 import android.preference.PreferenceManager
 import android.util.Log
 import android.widget.Toast
-import link.standen.michael.phonesaver.R
+import link.standen.michael.phonesaver_re.R
 import java.util.*
 import java.util.concurrent.ConcurrentLinkedQueue
 import java.util.concurrent.Executors

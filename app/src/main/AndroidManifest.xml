@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 		  xmlns:tools="http://schemas.android.com/tools"
-		  package="link.standen.michael.phonesaver"
 		  tools:ignore="GoogleAppIndexingWarning">
 
 	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -19,6 +18,7 @@
 		<activity
 			android:name=".activity.FolderListActivity"
 			android:label="@string/app_name"
+			android:exported="true"
 			android:theme="@style/AppTheme.NoActionBar">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
@@ -32,7 +32,7 @@
 			android:theme="@style/AppTheme">
 			<meta-data
 				android:name="android.support.PARENT_ACTIVITY"
-				android:value="link.standen.michael.phonesaver.activity.FolderListActivity" />
+				android:value="link.standen.michael.phonesaver_re.activity.FolderListActivity" />
 		</activity>
 		<activity
 			android:name=".activity.CreditsActivity"
@@ -41,6 +41,7 @@
 		</activity>
 		<activity
 			android:name=".activity.SaverActivity"
+			android:exported="true"
 			android:label="@string/app_name"
 			android:theme="@style/AppTheme">
 			<intent-filter>
@@ -62,10 +63,11 @@
 			android:label="@string/title_activity_settings">
 			<meta-data
 				android:name="android.support.PARENT_ACTIVITY"
-				android:value="link.standen.michael.phonesaver.activity.FolderListActivity" />
+				android:value="link.standen.michael.phonesaver_re.activity.FolderListActivity" />
 		</activity>
 
-		<receiver android:name=".receiver.DownloadBroadcastReceiver">
+		<receiver android:name=".receiver.DownloadBroadcastReceiver"
+			android:exported="true">
 			<intent-filter>
 				<action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
 			</intent-filter>
@@ -73,6 +75,7 @@
 
 		<service android:name=".service.LocationChooserTargetService"
 			android:label="@string/app_name"
+			android:exported="true"
 			android:permission="android.permission.BIND_CHOOSER_TARGET_SERVICE">
 			<intent-filter>
 				<action android:name="android.service.chooser.ChooserTargetService" />

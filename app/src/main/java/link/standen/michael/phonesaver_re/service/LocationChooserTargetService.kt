@@ -1,4 +1,4 @@
-package link.standen.michael.phonesaver.service
+package link.standen.michael.phonesaver_re.service
 
 import android.content.ComponentName
 import android.content.IntentFilter
@@ -10,11 +10,11 @@ import android.os.Build
 import android.os.Bundle
 import android.service.chooser.ChooserTarget
 import android.service.chooser.ChooserTargetService
-import android.support.annotation.RequiresApi
+import androidx.annotation.RequiresApi
 import com.amulyakhare.textdrawable.TextDrawable
-import link.standen.michael.phonesaver.activity.SaverActivity
-import link.standen.michael.phonesaver.util.DebugLogger
-import link.standen.michael.phonesaver.util.LocationHelper
+import link.standen.michael.phonesaver_re.activity.SaverActivity
+import link.standen.michael.phonesaver_re.util.DebugLogger
+import link.standen.michael.phonesaver_re.util.LocationHelper
 import java.io.File
 
 /**
@@ -62,7 +62,7 @@ class LocationChooserTargetService : ChooserTargetService() {
 		val char = if (index >= 0 && index < text.length){
 			text[index + 1]
 		} else File.separatorChar
-		val drawable = TextDrawable.builder().buildRound(char.toString(), Color.LTGRAY)
+		val drawable = TextDrawable.Builder().setText(char.toString()).setTextColor(Color.LTGRAY).build()
 		drawable.setBounds(0, 0, canvas.width, canvas.height)
 		drawable.draw(canvas)
 

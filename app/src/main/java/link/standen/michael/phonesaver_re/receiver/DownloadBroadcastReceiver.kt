@@ -1,11 +1,11 @@
-package link.standen.michael.phonesaver.receiver
+package link.standen.michael.phonesaver_re.receiver
 
 import android.content.BroadcastReceiver
 import android.app.DownloadManager
 import android.content.Context
 import android.content.Intent
 import android.widget.Toast
-import link.standen.michael.phonesaver.R
+import link.standen.michael.phonesaver_re.R
 
 /**
  * A class for monitoring downloads and toasting the user on completion.

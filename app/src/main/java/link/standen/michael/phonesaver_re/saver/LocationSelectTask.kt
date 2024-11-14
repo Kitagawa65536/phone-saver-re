@@ -1,9 +1,9 @@
-package link.standen.michael.phonesaver.saver
+package link.standen.michael.phonesaver_re.saver
 
 import android.content.Intent
 import android.os.Build
-import link.standen.michael.phonesaver.activity.SaverActivity
-import link.standen.michael.phonesaver.util.DebugLogger
+import link.standen.michael.phonesaver_re.activity.SaverActivity
+import link.standen.michael.phonesaver_re.util.DebugLogger
 
 /**
  * An async task to handle saving a single text entry

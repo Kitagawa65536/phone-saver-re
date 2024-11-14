@@ -1,9 +1,8 @@
-package link.standen.michael.phonesaver.activity
+package link.standen.michael.phonesaver_re.activity
 
 import android.content.Intent
 import android.os.Bundle
 import android.os.Environment
-import android.support.design.widget.BottomNavigationView
 import android.widget.ListView
 import android.widget.AdapterView
 import java.io.File
@@ -11,9 +10,10 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.ArrayAdapter
 import android.widget.TextView
-import link.standen.michael.phonesaver.R.*
-import link.standen.michael.phonesaver.util.DebugLogger
-import link.standen.michael.phonesaver.util.LocationHelper
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import link.standen.michael.phonesaver_re.R.*
+import link.standen.michael.phonesaver_re.util.DebugLogger
+import link.standen.michael.phonesaver_re.util.LocationHelper
 
 /**
  * An activity for selecting a folder in the file system.
@@ -128,7 +128,7 @@ class FolderSelectActivity : ListActivity() {
 	private fun removeCurrent(location: String): String =
 		location.replace(currentPath, "")
 
-	override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+	override fun onOptionsItemSelected(item: MenuItem): Boolean {
 		when (item?.itemId){
 			android.R.id.home -> {
 				// Back button

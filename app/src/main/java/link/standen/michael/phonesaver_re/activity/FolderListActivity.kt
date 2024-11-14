@@ -1,4 +1,4 @@
-package link.standen.michael.phonesaver.activity
+package link.standen.michael.phonesaver_re.activity
 
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -6,14 +6,16 @@ import android.database.DataSetObserver
 import android.os.Build
 import android.view.View
 import android.widget.ListView
+import androidx.appcompat.widget.Toolbar
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import de.cketti.library.changelog.ChangeLog
-import link.standen.michael.phonesaver.R
-import link.standen.michael.phonesaver.adapter.DeletableLocationArrayAdapter
-import link.standen.michael.phonesaver.util.DebugLogger
-import link.standen.michael.phonesaver.util.LocationHelper
-import link.standen.michael.phonesaver.data.LocationWithData
-import link.standen.michael.phonesaver.util.DialogHelper
-import link.standen.michael.phonesaver.util.PreferenceHelper
+import link.standen.michael.phonesaver_re.R
+import link.standen.michael.phonesaver_re.adapter.DeletableLocationArrayAdapter
+import link.standen.michael.phonesaver_re.util.DebugLogger
+import link.standen.michael.phonesaver_re.util.LocationHelper
+import link.standen.michael.phonesaver_re.data.LocationWithData
+import link.standen.michael.phonesaver_re.util.DialogHelper
+import link.standen.michael.phonesaver_re.util.PreferenceHelper
 
 /**
  * The entry point activity.
@@ -43,10 +45,10 @@ class FolderListActivity : ListActivity() {
 	override fun onCreate(savedInstanceState: android.os.Bundle?) {
 		super.onCreate(savedInstanceState)
 		setContentView(R.layout.folder_list_activity)
-		val toolbar = findViewById<android.support.v7.widget.Toolbar>(R.id.toolbar)
+		val toolbar = findViewById<Toolbar>(R.id.toolbar)
 		setSupportActionBar(toolbar)
 
-		val fab = findViewById<android.support.design.widget.FloatingActionButton>(R.id.fab)
+		val fab = findViewById<FloatingActionButton>(R.id.fab)
 		fab.setOnClickListener {
 			val intent = Intent(this@FolderListActivity, FolderSelectActivity::class.java)
 			this@FolderListActivity.startActivityForResult(intent, FOLDER_SELECT_REQUEST_CODE)
@@ -155,10 +157,13 @@ class FolderListActivity : ListActivity() {
 		}
 		if (resultCode == RESULT_OK) {
 			if (requestCode == 1) {
-				val folder = LocationHelper.removeRoot(data.getStringExtra(FolderSelectActivity.FOLDER_SELECTED))
+				val folder = data.getStringExtra(FolderSelectActivity.FOLDER_SELECTED)
+					?.let { LocationHelper.removeRoot(it) }
 				// Don't add duplicates
 				if (!folderList.contains(folder)) {
-					folderList.add(folder)
+					if (folder != null) {
+						folderList.add(folder)
+					}
 					folderList.sortBy { it.toLowerCase() }
 					LocationHelper.saveFolderList(this, folderList)
 					adapter.notifyDataSetChanged()

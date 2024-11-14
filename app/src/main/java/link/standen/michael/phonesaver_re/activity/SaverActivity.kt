@@ -1,4 +1,4 @@
-package link.standen.michael.phonesaver.activity
+package link.standen.michael.phonesaver_re.activity
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -8,21 +8,21 @@ import android.media.MediaScannerConnection
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
-import link.standen.michael.phonesaver.R
-import link.standen.michael.phonesaver.util.LocationHelper
+import link.standen.michael.phonesaver_re.R
+import link.standen.michael.phonesaver_re.util.LocationHelper
 import android.provider.OpenableColumns
 import android.text.Html
 import android.text.method.LinkMovementMethod
 import android.view.View
 import android.webkit.MimeTypeMap
 import android.widget.*
-import link.standen.michael.phonesaver.util.DebugLogger
+import link.standen.michael.phonesaver_re.util.DebugLogger
 import java.io.*
 import android.widget.TextView
-import link.standen.michael.phonesaver.saver.LocationSelectTask
-import link.standen.michael.phonesaver.saver.HandleSingleTextTask
-import link.standen.michael.phonesaver.data.Pair
-import link.standen.michael.phonesaver.util.PreferenceHelper
+import link.standen.michael.phonesaver_re.saver.LocationSelectTask
+import link.standen.michael.phonesaver_re.saver.HandleSingleTextTask
+import link.standen.michael.phonesaver_re.data.Pair
+import link.standen.michael.phonesaver_re.util.PreferenceHelper
 
 /**
  * An activity to handle saving files.

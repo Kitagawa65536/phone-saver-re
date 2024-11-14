@@ -1,10 +1,10 @@
-package link.standen.michael.phonesaver.saver
+package link.standen.michael.phonesaver_re.saver
 
 import android.net.Uri
 import android.os.AsyncTask
 import android.util.Log
-import link.standen.michael.phonesaver.activity.SaverActivity
-import link.standen.michael.phonesaver.util.DebugLogger
+import link.standen.michael.phonesaver_re.activity.SaverActivity
+import link.standen.michael.phonesaver_re.util.DebugLogger
 import java.io.BufferedOutputStream
 import java.io.FileOutputStream
 import java.lang.ref.WeakReference
