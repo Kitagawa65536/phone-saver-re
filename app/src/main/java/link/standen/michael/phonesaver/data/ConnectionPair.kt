@@ -1,4 +1,4 @@
-package link.standen.michael.phonesaver_re.data
+package link.standen.michael.phonesaver.data
 
 import java.net.HttpURLConnection
 

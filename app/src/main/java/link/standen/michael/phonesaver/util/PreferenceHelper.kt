@@ -1,9 +1,9 @@
-package link.standen.michael.phonesaver_re.util
+package link.standen.michael.phonesaver.util
 
 import android.content.Context
 import android.os.Build
 import android.preference.PreferenceManager
-import link.standen.michael.phonesaver_re.R
+import link.standen.michael.phonesaver.R
 
 /**
  * A helper class for managing preferences.

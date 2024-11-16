@@ -1,4 +1,4 @@
-package link.standen.michael.phonesaver_re.activity
+package link.standen.michael.phonesaver.activity
 
 import android.os.Bundle
 import android.widget.ListView

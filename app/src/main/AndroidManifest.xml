@@ -32,7 +32,7 @@
 			android:theme="@style/AppTheme">
 			<meta-data
 				android:name="android.support.PARENT_ACTIVITY"
-				android:value="link.standen.michael.phonesaver_re.activity.FolderListActivity" />
+				android:value="link.standen.michael.phonesaver.activity.FolderListActivity" />
 		</activity>
 		<activity
 			android:name=".activity.CreditsActivity"
@@ -63,7 +63,7 @@
 			android:label="@string/title_activity_settings">
 			<meta-data
 				android:name="android.support.PARENT_ACTIVITY"
-				android:value="link.standen.michael.phonesaver_re.activity.FolderListActivity" />
+				android:value="link.standen.michael.phonesaver.activity.FolderListActivity" />
 		</activity>
 
 		<receiver android:name=".receiver.DownloadBroadcastReceiver"

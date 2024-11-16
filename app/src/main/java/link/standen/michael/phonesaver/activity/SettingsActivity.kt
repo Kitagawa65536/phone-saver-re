@@ -1,4 +1,4 @@
-package link.standen.michael.phonesaver_re.activity
+package link.standen.michael.phonesaver.activity
 
 import android.os.Build
 import android.os.Bundle
@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.preference.ListPreference
 import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
-import link.standen.michael.phonesaver_re.R
+import link.standen.michael.phonesaver.R
 
 /**
  * A Preference Activity that presents a set of application settings. On

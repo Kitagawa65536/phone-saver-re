@@ -1,4 +1,4 @@
-package link.standen.michael.phonesaver_re.util
+package link.standen.michael.phonesaver.util
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -6,7 +6,7 @@ import android.text.method.LinkMovementMethod
 import android.text.util.Linkify
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
-import link.standen.michael.phonesaver_re.R
+import link.standen.michael.phonesaver.R
 
 /**
  * A helper class for managing dialog pop ups

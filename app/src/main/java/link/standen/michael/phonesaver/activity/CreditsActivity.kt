@@ -1,16 +1,16 @@
-package link.standen.michael.phonesaver_re.activity
+package link.standen.michael.phonesaver.activity
 
 import android.content.pm.PackageManager
 import android.os.Bundle
 import android.text.method.LinkMovementMethod
 import android.widget.TextView
 
-import link.standen.michael.phonesaver_re.R
+import link.standen.michael.phonesaver.R
 import java.util.Locale
 import android.os.Build
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import link.standen.michael.phonesaver_re.util.DebugLogger
+import link.standen.michael.phonesaver.util.DebugLogger
 
 /**
  * Credits activity.

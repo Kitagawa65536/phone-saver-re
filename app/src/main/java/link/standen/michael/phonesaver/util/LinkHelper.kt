@@ -1,7 +1,7 @@
-package link.standen.michael.phonesaver_re.util
+package link.standen.michael.phonesaver.util
 
 import android.content.Context
-import link.standen.michael.phonesaver_re.data.ConnectionPair
+import link.standen.michael.phonesaver.data.ConnectionPair
 
 import java.net.URL
 import java.net.HttpURLConnection

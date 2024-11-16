@@ -1,4 +1,4 @@
-package link.standen.michael.phonesaver_re.service
+package link.standen.michael.phonesaver.service
 
 import android.content.ComponentName
 import android.content.IntentFilter
@@ -12,9 +12,9 @@ import android.service.chooser.ChooserTarget
 import android.service.chooser.ChooserTargetService
 import androidx.annotation.RequiresApi
 import com.amulyakhare.textdrawable.TextDrawable
-import link.standen.michael.phonesaver_re.activity.SaverActivity
-import link.standen.michael.phonesaver_re.util.DebugLogger
-import link.standen.michael.phonesaver_re.util.LocationHelper
+import link.standen.michael.phonesaver.activity.SaverActivity
+import link.standen.michael.phonesaver.util.DebugLogger
+import link.standen.michael.phonesaver.util.LocationHelper
 import java.io.File
 
 /**

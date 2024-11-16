@@ -1,4 +1,4 @@
-package link.standen.michael.phonesaver_re.activity
+package link.standen.michael.phonesaver.activity
 
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -9,13 +9,13 @@ import android.widget.ListView
 import androidx.appcompat.widget.Toolbar
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import de.cketti.library.changelog.ChangeLog
-import link.standen.michael.phonesaver_re.R
-import link.standen.michael.phonesaver_re.adapter.DeletableLocationArrayAdapter
-import link.standen.michael.phonesaver_re.util.DebugLogger
-import link.standen.michael.phonesaver_re.util.LocationHelper
-import link.standen.michael.phonesaver_re.data.LocationWithData
-import link.standen.michael.phonesaver_re.util.DialogHelper
-import link.standen.michael.phonesaver_re.util.PreferenceHelper
+import link.standen.michael.phonesaver.R
+import link.standen.michael.phonesaver.adapter.DeletableLocationArrayAdapter
+import link.standen.michael.phonesaver.util.DebugLogger
+import link.standen.michael.phonesaver.util.LocationHelper
+import link.standen.michael.phonesaver.data.LocationWithData
+import link.standen.michael.phonesaver.util.DialogHelper
+import link.standen.michael.phonesaver.util.PreferenceHelper
 
 /**
  * The entry point activity.

@@ -1,4 +1,4 @@
-package link.standen.michael.phonesaver_re.activity
+package link.standen.michael.phonesaver.activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -11,9 +11,9 @@ import android.view.View
 import android.widget.ArrayAdapter
 import android.widget.TextView
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import link.standen.michael.phonesaver_re.R.*
-import link.standen.michael.phonesaver_re.util.DebugLogger
-import link.standen.michael.phonesaver_re.util.LocationHelper
+import link.standen.michael.phonesaver.R.*
+import link.standen.michael.phonesaver.util.DebugLogger
+import link.standen.michael.phonesaver.util.LocationHelper
 
 /**
  * An activity for selecting a folder in the file system.

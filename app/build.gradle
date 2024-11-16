@@ -5,7 +5,7 @@ apply plugin: 'kotlin-android'
 android {
 	compileSdkVersion 35
 	defaultConfig {
-		applicationId "link.standen.michael.phonesaver_re"
+		applicationId "link.standen.michael.phonesaver"
 		minSdkVersion 15
 		targetSdkVersion 35
 		versionCode 36
@@ -13,9 +13,9 @@ android {
 
 		vectorDrawables.useSupportLibrary = true
 	}
-	namespace "link.standen.michael.phonesaver_re"
+	namespace "link.standen.michael.phonesaver"
 	kotlinOptions {
-		jvmTarget = "1.8" // または使用しているJVMのバージョンに合わせて1.6や11など
+		jvmTarget = "1.8"
 	}
 
 	buildTypes {

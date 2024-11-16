@@ -1,4 +1,4 @@
-package link.standen.michael.phonesaver_re.saver
+package link.standen.michael.phonesaver.saver
 
 import android.app.DownloadManager
 import android.content.Context
@@ -7,11 +7,11 @@ import android.media.MediaScannerConnection
 import android.net.Uri
 import android.os.AsyncTask
 import android.webkit.MimeTypeMap
-import link.standen.michael.phonesaver_re.R
-import link.standen.michael.phonesaver_re.activity.SaverActivity
-import link.standen.michael.phonesaver_re.data.ConnectionPair
-import link.standen.michael.phonesaver_re.data.Pair
-import link.standen.michael.phonesaver_re.util.*
+import link.standen.michael.phonesaver.R
+import link.standen.michael.phonesaver.activity.SaverActivity
+import link.standen.michael.phonesaver.data.ConnectionPair
+import link.standen.michael.phonesaver.data.Pair
+import link.standen.michael.phonesaver.util.*
 import java.io.*
 import java.lang.ref.WeakReference
 import java.net.HttpURLConnection

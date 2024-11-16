@@ -5,7 +5,7 @@
 	android:id="@+id/container"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	tools:context="link.standen.michael.phonesaver_re.activity.FolderSelectActivity">
+	tools:context="link.standen.michael.phonesaver.activity.FolderSelectActivity">
 
 	<com.google.android.material.bottomnavigation.BottomNavigationView
 		android:id="@+id/navigation"
