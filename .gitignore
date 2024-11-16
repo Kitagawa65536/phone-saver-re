@@ -59,3 +59,14 @@ freeline_project_description.json
 # OS Files
 .DS_Store
 *.save
+.idea/compiler.xml
+.idea/deploymentTargetSelector.xml
+.idea/kotlinc.xml
+.idea/migrations.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/runConfigurations.xml
+.idea/caches/deviceStreaming.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/runConfigurations.xml
